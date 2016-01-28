@@ -1,0 +1,140 @@
+﻿body {
+}
+
+h2, span {
+    display: inline-block;
+}
+
+.wrapper {
+    width: 65%;
+    margin: 0 auto;
+    height: 100%;
+    padding-top: 225px;
+    padding-bottom: 50px;
+    margin-bottom: 22px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 20px black;
+    border: 2px solid white;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ededed+0,f6f6f6+53,ffffff+100 */
+    background: rgb(237,237,237); /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VkZWRlZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUzJSIgc3RvcC1jb2xvcj0iI2Y2ZjZmNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(237,237,237,1)), color-stop(53%,rgba(246,246,246,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(237,237,237,1) 0%,rgba(246,246,246,1) 53%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(237,237,237,1) 0%,rgba(246,246,246,1) 53%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(237,237,237,1) 0%,rgba(246,246,246,1) 53%,rgba(255,255,255,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(237,237,237,1) 0%,rgba(246,246,246,1) 53%,rgba(255,255,255,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff',GradientType=0 ); /* IE6-8 */
+}
+
+.wrapper-input {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.lbSearch {
+    position: relative;
+    left: 40px;
+    font-size: 20px;
+    color: #333333;
+}
+
+.lbtSearch {
+    color: black;
+    font-size: 24px;
+    font-weight: 700;
+    font-style: italic;
+    color: #333333;
+    text-shadow: 2px 2px 1px white;
+    padding-left: 5px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.tbSearch {
+    height: 36px;
+    width: 600px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    padding-left: 43px;
+    padding-right: 43px;
+    border-radius: 50px;
+    border: 1px solid #cccccc;
+    outline: none;
+    color: #555555;
+}
+
+.lbNoResult {
+    margin: 25px;
+    font-style: italic;
+    color: #555555;
+    font-weight: 400;
+    }
+
+.wrapper-prod {
+    display: block;
+    width: 700px;
+    margin: 25px auto;
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 30px;
+}
+
+    .wrapper-prod .img-span {
+        width: 150px;
+        margin-right: 15px;
+        float: left;
+    }
+
+        .wrapper-prod .img-span img {
+            height: 100px;
+            float: left;
+        }
+
+    .wrapper-prod .wrapper-text {
+        width: 500px;
+        display: inline-block;
+        height: 80px;
+        padding-top: 10px;
+        color: #333333;
+        text-shadow: 2px 2px 1px white;
+    }
+
+        .wrapper-prod .wrapper-text .productname {
+            font-size: 1.3rem;
+            margin: 5px 0;
+            width: 300px;
+            display: block;
+        }
+
+        .wrapper-prod .wrapper-text .categoryname {
+            font-size: 1.0rem;
+            margin: 5px 0;
+            width: 300px;
+            display: block;
+        }
+
+        .wrapper-prod .wrapper-text .productprice {
+            font-size: 2.8rem;
+            font-weight: 900;
+            position: relative;
+            top: -55px;
+            margin: 5px 0;
+            margin-right: 35px;
+            float: right;
+        }
+
+.pagination, .pag-next, .pag-before {
+    color: #333333;
+}
+.pagination, .pag-before {
+    margin-left: 100px;
+}
+
+
+.pagination .wrapper-pag {
+    width: 300px;
+    margin: 0 auto;
+}
+

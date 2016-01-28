@@ -1,0 +1,744 @@
+﻿body {
+    background-image: url('../Media/Lime-Bricks---Desktop.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100vw;
+}
+
+/* Video-header ////////////////////////////////////////////////////////////*/
+
+.video-header {
+    width: 100%;
+    height: 100%;
+    border-left: none;
+    border-right: none;
+    position: relative;
+    padding-top: 0;
+    margin-top: 25px;
+}
+
+.video-container {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 25px;
+}
+
+    .video-container img {
+        margin-top: 440px;
+        width: 101%;
+    }
+
+video {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.video-content .wrapper-video-content {
+    position: absolute;
+    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.49);
+    width: 50%;
+    height: 100%;
+    border-right: 1px solid #ffffff;
+    border-right: 1px solid rgba(133, 133, 133, 0.24);
+    border-left: 1px solid #ffffff;
+    border-left: 1px solid rgba(133, 133, 133, 0.24);
+    box-shadow: 0px 0px 100px black inset;
+    padding: 0;
+    margin: 0 0 0 900px;
+}
+
+    .video-content .wrapper-video-content h2 {
+        font-size: 3rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        line-height: 75px;
+        color: whitesmoke;
+        margin: 200px 0 0 0;
+        padding: 0 0 0 50px;
+        text-shadow: 2px 2px 1px black;
+    }
+
+    .video-content .wrapper-video-content #slogan {
+        color: whitesmoke;
+        text-transform: uppercase;
+        font-style: italic;
+        margin: 0;
+        padding: 0 0 0 50px;
+        text-shadow: 1px 1px 1px black;
+    }
+
+.video-content .wrapper-product {
+    height: 400px;
+    margin: 100px 0 0 0;
+    padding: 0;
+}
+
+    .video-content .wrapper-product .the-product h3 {
+        color: whitesmoke;
+        font-size: 2rem;
+        margin: 0 0 10px 50px;
+        text-transform: uppercase;
+        font-weight: 900;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    .video-content .wrapper-product .the-product .product-presentation {
+        height: 330px;
+        width: 95%;
+        margin: 0 auto;
+        border-bottom: 1px solid whitesmoke;
+        border-top: 1px solid whitesmoke;
+    }
+
+
+
+    .video-content .wrapper-product .the-product img {
+        width: 300px;
+        height: 300px;
+        margin: 10px 0 15px 50px;
+        padding: 0;
+        float: left;
+        border-radius: 50%;
+        box-shadow: 0 0 30px black;
+        border: 3px solid rgba(192, 192, 192, 0.51);
+    }
+
+    .video-content .wrapper-product .the-product .short-description {
+        width: 55%;
+        margin: 75px 0 0 20px;
+        padding: 0;
+        float: left;
+        color: whitesmoke;
+        line-height: 110%;
+        font-style: italic;
+        text-transform: uppercase;
+        font-size: 2rem;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    .video-content .wrapper-product .the-product .read-more {
+        position: relative;
+        width: 55%;
+        margin: 10px 0 0 20px;
+        padding: 0;
+        float: left;
+        color: whitesmoke;
+        font-style: italic;
+        text-transform: uppercase;
+        font-size: 1rem;
+        text-shadow: 1px 1px 1px black;
+    }
+
+.footer-nav {
+    background-color: black;
+    width: 100vw;
+    height: 150px;
+    position: absolute;
+    top: 950px;
+    box-shadow: 10px 0 10px black;
+}
+
+    .footer-nav ul {
+        width: 60%;
+        margin: 25px auto;
+    }
+
+        .footer-nav ul li {
+            display: inline-block;
+            margin-right: 35px;
+        }
+
+            .footer-nav ul li img {
+                height: 50px;
+            }
+
+.sale-arrow {
+    position: absolute;
+    top: 62%;
+    left: 7%;
+    width: 200px;
+    height: 300px;
+    z-index: 100;
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+    animation-delay: 2s;
+    box-shadow: 0 0 10px black;
+}
+
+    .sale-arrow .text-wrapper {
+        width: 95%;
+        height: 95%;
+        margin: 8px auto;
+        color: white;
+    }
+
+        .sale-arrow .text-wrapper .big {
+            font-size: 16px;
+            overflow: hidden;
+            font-weight: 900;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+            .sale-arrow .text-wrapper .big:nth-child(1) {
+                font-size: 85px;
+                animation-delay: 2s;
+            }
+
+            .sale-arrow .text-wrapper .big:nth-child(3) {
+                font-size: 80px;
+                animation-delay: 3s;
+            }
+
+            .sale-arrow .text-wrapper .big:nth-child(5) {
+                font-size: 47px;
+                animation-delay: 4s;
+            }
+
+        .sale-arrow .text-wrapper .small {
+            font-size: 16px;
+            overflow: hidden;
+            text-align: justify;
+            text-transform: uppercase;
+        }
+
+            .sale-arrow .text-wrapper .small:nth-child(2) {
+                font-size: 38px;
+                animation-delay: 3s;
+            }
+
+            .sale-arrow .text-wrapper .small:nth-child(4) {
+                font-size: 17px;
+                animation-delay: 4s;
+            }
+
+    .sale-arrow i {
+        font-size: 50px;
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+        .sale-arrow i:nth-child(2) {
+            margin-left: 5px;
+        }
+
+
+/* Second section //////////////////////////////////////////*/
+.second-section {
+    background-image: url('../Media/Images/CampainImg/tmnt.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100vw;
+    background-position: bottom;
+
+}
+
+.special-sale {
+    position: absolute;
+    background-color: red;
+    width: 200px;
+    height: 140px;
+    color: white;
+    font-weight: 900;
+    font-size: 5rem;
+    text-shadow: 2px 2px 1px black;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 50px;
+    box-shadow: 0 0 20px black;
+    margin: -100px 0 0 250px;
+}
+
+.second-section .campain-wrapper {
+    width: 100%;
+    height: 500px;
+    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.50);
+    border: 1px solid #333;
+    box-shadow: 0 0 10px black;
+}
+
+
+.second-section .campain-info {
+    margin: 25px auto;
+    width: 65%;
+}
+
+
+.second-section img {
+    height: 400px;
+    float: left;
+}
+
+.second-section .campain-text {
+    display: inline-block;
+    margin: 150px 0 0 20px;
+    text-align: right;
+    float: right;
+}
+
+.second-section h2 {
+    color: white;
+    font-size: 3rem;
+    text-shadow: 2px 2px 1px black;
+    margin-bottom: 10px;
+}
+
+.second-section .new-price {
+    color: red;
+    font-size: 4.5rem;
+    text-shadow: 2px 2px 1px black;
+    margin-right: 15px;
+    font-weight: 900;
+}
+
+.second-section .old-price {
+    color: white;
+    font-size: 2.0rem;
+    text-shadow: 2px 2px 1px black;
+    text-decoration: line-through;
+}
+
+.second-section a {
+    color: white;
+    font-size: 2rem;
+    text-shadow: 2px 2px 1px black;
+    margin-bottom: 10px;
+    text-decoration: none;
+    float: right;
+    margin: 10px 250px 0 0;
+}
+
+/* third section ////////////////////////////////////////////////*/
+.third-section {
+    background-image: url('../Media/Images/CampainImg/cdcomics.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100vw;
+   background-position: bottom;
+}
+
+.special-bestseller {
+    position: absolute;
+    background-color: red;
+    width: 200px;
+    height: 150px;
+    color: white;
+    font-weight: 900;
+    font-size: 3rem;
+    text-shadow: 2px 2px 1px black;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 40px;
+    box-shadow: 0 0 20px black;
+    margin: 200px 0 0 1555px;
+}
+
+.third-section .campain-wrapper {
+    height: 100%;
+    width: 600px;
+    margin: 0 0 0 55%;
+    background-color: #40162b;
+    background-color: rgba(64, 22, 43, 0.50);
+    border: 1px solid #333;
+    box-shadow: 0 0 10px black;
+    float: left;
+}
+
+
+.third-section .campain-info {
+    margin: 50% auto 0 auto;
+    width: 90%;
+}
+
+
+.third-section img {
+    width: 99%;
+}
+
+
+.third-section .campain-text {
+    margin: 25px auto 0 auto;
+    text-align: right;
+    float: right;
+}
+
+.third-section h2 {
+    color: white;
+    font-size: 3rem;
+    text-shadow: 2px 2px 1px black;
+    margin-bottom: 10px;
+}
+
+.third-section .old-price {
+    color: white;
+    font-size: 6.0rem;
+    text-shadow: 2px 2px 1px black;
+    font-weight: 900;
+}
+
+.third-section a {
+    color: white;
+    font-size: 2rem;
+    text-shadow: 2px 2px 1px black;
+    margin-bottom: 10px;
+    text-decoration: none;
+    float: right;
+    margin: 875px 0 0 -200px;
+    position: absolute;
+}
+
+/* fourth section ////////////////////////////////////////////////*/
+.fourth-section {
+    background-image: url('../Media/Images/CampainImg/hobbit.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100vw;
+  background-position: bottom;
+}
+
+    .fourth-section .wrapper {
+        width: 50%;
+        margin: 100px auto 0 auto;
+    }
+
+    .fourth-section .box {
+        width: 300px;
+        height: 365px;
+        float: left;
+        background-color: #829b9f;
+        background-color: rgba(130, 155, 159, 0.50);
+        box-shadow: 0 0 5px black;
+        margin: 10px;
+        border-radius: 10px;
+    }
+
+    .fourth-section .box-img-wrap {
+        width: 300px;
+        height: 260px;
+        border-bottom: 1px solid #4d6164;
+        border-bottom: 1px solid rgba(77, 97, 100, 0.2);
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+        .fourth-section .box-img-wrap img {
+            max-width: 280px;
+            max-height: 240px;
+            display: block;
+            margin: auto;
+        }
+
+    .fourth-section .box .name {
+        color: white;
+        font-weight: 700;
+        font-size: 1.2rem;
+        text-shadow: 1px 1px 1px black;
+        margin: 10px;
+    }
+
+    .fourth-section .box .price {
+        position: absolute;
+        color: white;
+        font-weight: 700;
+        font-size: 3rem;
+        text-shadow: 1px 1px 1px black;
+        margin: 10px 0 0 100px;
+    }
+
+    .fourth-section .box .ordinary-price {
+        color: red;
+        font-weight: 700;
+        font-size: 1rem;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    .fourth-section a {
+        color: white;
+        font-size: 2rem;
+        text-shadow: 2px 2px 1px black;
+        text-decoration: none;
+        float: right;
+        margin: 10px 350px 0 0;
+    }
+
+
+
+/* fifth section ////////////////////////////////////////////////*/
+.fifth-section {
+    background-image: url('../Media/Images/CampainImg/jurassic.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100vw;
+ background-position: bottom;
+}
+
+    .fifth-section .wrapper {
+        height: 100%;
+        width: 600px;
+        margin: 0 0 0 15%;
+        background-color: black;
+        background-color: rgba(0, 0, 0, 0.50);
+        border: 1px solid #333;
+        box-shadow: 0 0 10px black;
+        float: left;
+    }
+
+        .fifth-section .wrapper .box:nth-child(1) {
+            margin-top: 200px;
+        }
+
+    .fifth-section .box {
+        width: 500px;
+        margin: 40px auto 5px auto;
+    }
+
+        .fifth-section .box img {
+            width: 50%;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .fifth-section .box .info-text {
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 10%;
+        }
+
+    .fifth-section h2 {
+        color: white;
+        font-size: 1.5rem;
+        text-shadow: 2px 2px 1px black;
+        margin-bottom: 5px;
+    }
+
+    .fifth-section .price {
+        color: white;
+        font-size: 3.5rem;
+        text-shadow: 2px 2px 1px black;
+        margin-bottom: 5px;
+        font-weight: 900;
+    }
+
+    .fifth-section .old-price {
+        color: white;
+        font-size: 1rem;
+        text-shadow: 2px 2px 1px black;
+        margin-bottom: 10px;
+        font-weight: 400;
+        text-decoration: line-through;
+        text-align: right;
+    }
+
+    .fifth-section a {
+        color: white;
+        font-size: 2rem;
+        text-shadow: 2px 2px 1px black;
+        margin-bottom: 10px;
+        text-decoration: none;
+        float: right;
+        margin: 850px 0px 0 400px;
+        position: absolute;
+    }
+
+
+
+
+/* sixth section ////////////////////////////////////////////////*/
+.sixth-section {
+    background-image: url('../Media/Images/CampainImg/princess.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100vw;
+background-position: bottom;
+}
+
+    .sixth-section .wrapper {
+        width: 40%;
+        margin: 80px 0 0 250px;
+    }
+
+    .sixth-section .box {
+        width: 300px;
+        height: 365px;
+        float: left;
+        background-color: #0f61ac;
+        background-color: rgba(15, 97, 172, 0.50);
+        box-shadow: 0 0 5px black;
+        margin: 10px;
+        border-radius: 10px;
+    }
+
+    .sixth-section .box-img-wrap {
+        width: 300px;
+        height: 260px;
+        border-bottom: 1px solid #4d6164;
+        border-bottom: 1px solid rgba(77, 97, 100, 0.2);
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+        .sixth-section .box-img-wrap img {
+            max-width: 290px;
+            max-height: 250px;
+            display: block;
+            margin: auto;
+        }
+
+    .sixth-section .box .name {
+        color: white;
+        font-weight: 700;
+        font-size: 1.2rem;
+        text-shadow: 1px 1px 1px black;
+        margin: 10px;
+    }
+
+    .sixth-section .box .price {
+        position: absolute;
+        color: white;
+        font-weight: 700;
+        font-size: 3rem;
+        text-shadow: 1px 1px 1px black;
+        margin: 10px 0 0 100px;
+    }
+
+    .sixth-section .box .ordinary-price {
+        color: red;
+        font-weight: 700;
+        font-size: 1rem;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    .sixth-section a {
+        color: #f8ebdd;
+        font-size: 2rem;
+        text-shadow: 1px 1px 5px black;
+        text-decoration: none;
+        font-weight: 700;
+        float: right;
+        margin: 320px 250px 0 0;
+    }
+
+/* seventh section ////////////////////////////////////////////////*/
+.seventh-section {
+    background-image: url('../Media/Images/CampainImg/star_wars.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100vw;
+background-position: bottom;
+}
+
+    .seventh-section .wrapper {
+        width: 100%;
+        height: 40%;
+    }
+
+    .seventh-section .box {
+        width: 49%;
+        height: 100%;
+        float: left;
+        background-color: #000000;
+        background-color: rgba(0, 0, 0, 0.50);
+        border: 1px solid #333;
+        border-radius: 0 10px 10px 0;
+        box-shadow: 0 0 10px black;
+    }
+
+        .seventh-section .box:nth-child(2) {
+            float: right;
+            border-radius: 10px 0 0 10px;
+        }
+
+        .seventh-section .box img {
+            width: 300px;
+            float: right;
+            margin: 50px 50px;
+            display: inline-block;
+        }
+
+        .seventh-section .box:nth-child(2) img {
+            width: 340px;
+            float: left;
+        }
+
+        .seventh-section .box .info-text {
+            margin-top: 100px;
+            display: inline-block;
+            float: right;
+            text-align: right;
+        }
+
+        .seventh-section .box:nth-child(2) .info-text {
+            float: left;
+            text-align: left;
+        }
+
+    .seventh-section h2 {
+        color: white;
+        font-size: 3rem;
+        text-shadow: 2px 2px 1px black;
+        margin-bottom: 5px;
+    }
+
+    .seventh-section .price {
+        color: white;
+        font-size: 7rem;
+        text-shadow: 2px 2px 1px black;
+        margin-bottom: 5px;
+        font-weight: 900;
+    }
+
+    .seventh-section a {
+        color: white;
+        font-size: 2rem;
+        text-shadow: 2px 2px 1px black;
+        margin-bottom: 10px;
+        text-decoration: none;
+        float: right;
+        margin: 10px 250px 0 0;
+    }
+
+/* Animation ///////////////////////////////////////////////////////*/
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scaleX(1);
+    }
+
+    30% {
+        -webkit-transform: scaleX(1);
+    }
+
+    40% {
+        -webkit-transform: scaleX(1.05);
+    }
+
+    50% {
+        -webkit-transform: scaleX(1);
+    }
+
+    60% {
+        -webkit-transform: scaleX(1);
+    }
+
+    70% {
+        -webkit-transform: scaleX(1.03);
+    }
+
+    80% {
+        -webkit-transform: scaleX(1);
+    }
+
+    100% {
+        -webkit-transform: scaleX(1);
+    }
+}

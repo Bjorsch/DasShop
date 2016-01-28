@@ -1,0 +1,89 @@
+﻿*:focus {
+    outline: 0;
+}
+
+body {
+    background-color: Highlight;
+}
+
+.panel-wrapper {
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    height: 450px;
+    background-color: white;
+}
+
+.text-heading {
+    color: #5d5d5d;
+    font: 20px/1 Aldrich,arial,sans-serif;
+    margin-left: 105px;
+    text-shadow: 1px 1px 0 #CCCCCC;
+    margin-top: -20px;
+}
+
+.logo img {
+    margin-left: -60px;
+}
+
+.input-username {
+    margin-left: 140px;
+    border: 1px solid #5d5d5d;
+    width: 210px;
+    margin-bottom: 15px;
+}
+
+.input-password {
+    margin-left: 140px;
+    border: 1px solid #5d5d5d;
+    width: 210px;
+
+}
+
+.txt-username {
+    border: none;
+}
+
+.txt-password {
+    border: none;
+}
+
+i {
+    border-right: 1px solid #5d5d5d;
+    /*height: 32px;*/
+    width: 35px;
+    padding: 0 !important;
+}
+
+.fa-lock:before {
+    padding-left: 7.5px;
+}
+
+.fa-user:before {
+    padding-left: 5px;
+}
+
+.btn-login {
+    margin-left: 252px;
+    margin-top: 15px;
+    width: 100px;
+    font-size: medium;
+    text-decoration: none;
+    border-radius: 3px;
+    background-color: #EEEEEE;
+    color: #333333;
+    padding: 2px 6px 2px 6px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+    font-family: Aldrich;
+}
+.checkbox-remember{
+    margin-left:262px;
+    margin-top:15px;
+}
+.msg{
+    margin-left:97px;
+}

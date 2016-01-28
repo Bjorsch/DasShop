@@ -1,0 +1,42 @@
+﻿body {
+}
+.table-admin-wrapper {
+    margin-top: 20px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+}
+.order {
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+.heading {
+    background-color: darkgray;
+    font-size: x-large;
+}
+.odd-items {
+    background-color: #eeeeee;
+}
+.order-id-heading, .order-unique-heading, .order-cust-heading {
+    width: 15%;
+}
+.order-mail-heading {
+    width: 20%;
+    text-align: left;
+}
+
+.order-date-heading {
+    width: 35%;
+    text-align: left;
+}
+
+.order-ids {
+    text-align: center;
+}
+td {
+        padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+

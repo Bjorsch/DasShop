@@ -1,0 +1,151 @@
+﻿@import url('Reset.css');
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+/* Header ///////////////////////////////////////////////////*/
+header {
+    background-color: white;
+}
+
+    header .shop-info {
+        display: block;
+        border-bottom: 1px solid gray;
+        height: 25px;
+        background-color: hsl(0, 0%, 94%);
+    }
+
+        header .shop-info p {
+            margin: 0 25px;
+            text-align: right;
+        }
+
+    header .sticky-header {
+        display: block;
+        height: 100%;
+        margin: 0;
+        border-bottom: 1px solid gray;
+        -webkit-box-shadow: 0 0 10px grey;
+        -ms-box-shadow: 0 0 10px grey;
+        box-shadow: 0 0 10px grey;
+        z-index: 1;
+    }
+
+        header .sticky-header .logo {
+            display: inline-block;
+            margin-left: 42%;
+            margin-bottom: 10px;
+        }
+
+            header .sticky-header .logo a {
+                font-family: 'Six Caps', sans-serif;
+                font-size: 6rem;
+                margin: 10px;
+                color: rgb(184,26,66);
+                text-shadow: 0 0 1px black;
+                text-decoration: none;
+            }
+            header .sticky-header .logo p {
+                font-size: 7rem;
+                display: inline;
+                margin: 0;
+            }
+
+        header .sticky-header .shoppingbag {
+            float: right;
+            /*display: inline-block;*/
+            margin-right: 25px;
+            padding: 0;
+            width: 300px;
+        }
+        header .sticky-header .shoppingbag .wrapper-bag-info {
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 20px;
+        }
+
+            header .sticky-header .shoppingbag .shoppingbag-outer{
+                margin-top: 5px;
+                background-color: #351E28;
+                padding: 1px 1px 1px 20px;
+                color: white;
+                border-radius: 20px;
+                height: 20px;
+                width: 180px;
+                text-align: left;
+                box-shadow: 0 0 1px black;
+                border: 1px solid black;
+                
+            }
+            header .sticky-header .shoppingbag .shoppingbag-inner{
+                background-color: white;
+                padding: 2px 15px 2px 15px;
+                color: black;
+                border-radius: 30px;
+                display: inline-block;
+                text-align: center;
+                float: right;
+                font-size: 0.9rem;
+                border: 1px solid black;
+
+            }
+
+
+            header .sticky-header .shoppingbag img {
+                
+                height: 75px;
+                margin-top: 15px;
+            }
+            
+
+    /* Header Nav ////////////////////////////////////////////////////////////*/
+    header nav {
+        padding: 20px 0;
+        border-bottom: 1px solid gray;
+        background-color: hsl(0, 0%, 94%);
+        z-index: -1;
+    }
+
+    header ul {
+        display: inline-block;
+        margin-left: 20%;
+    }
+
+        header ul li {
+            display: inline-block;
+            text-transform: uppercase;
+            font-weight: 100;
+            margin-left: 50px;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+        }
+
+    header nav ul li a {
+        color: black;
+        text-decoration: none;
+    }
+     header nav ul li a img {
+         height: 50px;
+    }
+
+        header nav ul li a:hover {
+            color: black;
+            text-decoration: none;
+            font-weight: 900;
+        }
+/* Footer ///////////////////////////////////////////////////////////*/
+footer {
+    -webkit-box-shadow: 0 0 10px grey;
+    -ms-box-shadow: 0 0 10px grey;
+    box-shadow: 0 0 10px grey;
+    height: 300px;
+    border-top: 1px solid gray;
+    background-color: hsl(0, 0%, 94%);
+}
+
+.clearfix {
+    overflow: auto;
+    zoom: 1;
+}

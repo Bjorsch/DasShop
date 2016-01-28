@@ -1,0 +1,81 @@
+﻿.order-header-heading {
+    font-size: x-large;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.order-details-wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.customer-details-wrapper {
+    background-color: #eeeeee;
+    width: 48%;
+    float: left;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.customer-details-wrapper span {
+        font-size: x-large;
+        display: block;
+        margin-top: 12px;
+    margin-bottom: 3px;
+    }
+.order-head-ID {
+    background-color: #eeeeee;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-bottom:1px solid black;
+    padding-bottom:10px;
+}
+.order-header {
+    min-height: 40px;
+    background-color: darkgray;
+    margin-bottom: 20px;
+}
+
+.product-details-wrapper {
+    width: 48%;
+    float: right;
+    padding-left: 10px;
+}
+
+    .product-details-wrapper span {
+        font-size: x-large;
+        display: block;
+        margin-top: 12px;
+        margin-bottom: 3px;
+    }
+
+.repeater-element {
+    border-bottom: 1px solid black;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    padding-left: 10px;
+}
+
+.alternating-repeater-element {
+    border-bottom: 1px solid black;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    padding-left: 10px;
+}
+
+.customer-sum-details-wrapper {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    background-color: #eeeeee;
+}
+
+#fraktkostnad {
+    font-weight: bold; 
+  
+}
+
+.phone-literal {
+    margin-bottom: 10px;
+}

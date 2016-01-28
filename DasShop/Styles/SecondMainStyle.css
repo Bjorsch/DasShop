@@ -1,0 +1,190 @@
+﻿@import url('Reset.css');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    z-index: 1;
+    background-image: url('../Media/Lime-Bricks---Desktop.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100vw;
+}
+
+body a {
+    color: #999;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #951419;
+}
+
+/* Header ///////////////////////////////////////////////////*/
+header {
+    background-color: white;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    
+}
+
+.sticky-header {
+    width: 100%;
+    height: 80px;
+    box-shadow: 10px 0 10px black;
+    background: black;
+}
+
+/* Shop info ///////////////////////////////////////////////////////////////////////*/
+header .shop-info {
+    display: block;
+    height: 25px;
+    background-color: black;
+}
+
+    header .shop-info span {
+        margin: 5px 20px;
+        color: white;
+        float: right;
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+    }
+
+
+/* Wrapper logo ////////////////////////////////////////////////////////////////////*/
+header .wrapper-logo {
+    float: left;
+    height: 80px;
+}
+
+    header .wrapper-logo img {
+        margin-left: 25px;
+        height: 50px;
+    }
+
+header .sticky-header .wrapper-logo span, header .sticky-header .wrapper-logo a {
+    color: white;
+    vertical-align: top;
+    font-size: 3rem;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+/* Shoppingbag/////////////////////////////////////////////////////////////////*/
+header .wrapper-shoppingbag {
+    display: inline-block;
+    float: right;
+    min-width: 25px;
+    height: 50px;
+    position: absolute;
+    right: 230px;
+    top: 30px;
+    background-color: red;
+    border-radius: 50px;
+    padding-right: 25px;
+}
+
+    header .wrapper-shoppingbag a {
+        text-decoration: none;
+    }
+
+    header .wrapper-shoppingbag .shoppingbag {
+        position: relative;
+        top: 10px;
+        left: 15px;
+        font-size: 18px;
+        color: white;
+        font-weight: 700;
+    }
+
+        header .wrapper-shoppingbag .shoppingbag i {
+            font-size: 24px;
+        }
+
+        header .wrapper-shoppingbag .shoppingbag span {
+            margin-left: 5px;
+        }
+
+.lblGoToCheckout {
+    position: absolute;
+    left: 1695px;
+    top: 48px;
+    color: white;
+}
+
+/* Nav ///////////////////////////////////////////////////////////////////////*/
+header nav {
+    padding-left: 25px;
+    width: 600px;
+    height: 35px;
+    z-index: 1;
+    color: white;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+header ul {
+    display: inline-block;
+    margin: 20px 0 0 80px;
+    float: left;
+}
+
+    header ul li {
+        display: inline-block;
+        margin-left: 30px;
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 1.1rem;
+    }
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+    header nav ul li a img {
+        height: 30px;
+    }
+
+    header nav ul li a:hover {
+        color: black;
+        text-decoration: none;
+        font-weight: 900;
+    }
+
+header .sticky-header nav .dropdown {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 1px grey;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    line-height: 10px;
+    box-sizing: border-box;
+}
+
+    header .sticky-header nav .dropdown option {
+        text-transform: none;
+        padding-left: 50px;
+        width: 300px;
+    }
+
+
+/* Clear fix */
+.clearfix {
+    overflow: auto;
+    zoom: 1;
+}
+
+
+    #page_loader i {
+        margin-left: 42%;
+        margin-top: 20%;
+        color: white;
+        text-shadow: 1px 1px 3px black;
+        font-size: 300px;
+
+    }
+

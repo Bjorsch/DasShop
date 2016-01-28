@@ -1,0 +1,68 @@
+﻿body {
+}
+
+.crud-wrapper {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    /*border: 2px solid green;*/
+    min-height: 800px;
+}
+
+.tbx-wrapper {
+    width: 35%;
+    /*border: 2px solid red;*/
+    float: left;
+    min-height: 300px;
+}
+
+.name, .image, .parallax {
+    display: block;
+    margin-top:20px;
+}
+
+.name-label, .image-label, .parallax-label{
+    display:block;
+    font-size:x-large;
+
+}
+
+.name-box, .image-box, .parallax-box{
+    display:block;
+    margin-top:8px;
+}
+.description {
+    width: 55%;
+    /*border: 2px solid blue;*/
+    /*display:inline;*/
+    float: right;
+}
+.desc-label{
+    display:block;
+    margin-top:20px;
+    font-size:x-large;
+    margin-bottom:8px;
+}
+
+.button-wrapper{
+    /*border: 2px solid orange;*/
+    width:50%;
+    float:right;
+    
+}
+.btn-create{
+  font-size: large;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+  margin-top:12px;
+  float: right;
+}
+
+
+

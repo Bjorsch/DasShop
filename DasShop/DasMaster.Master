@@ -1,0 +1,145 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="DasMaster.master.cs" Inherits="DasShop.DasMaster" %>
+
+<%@ Import Namespace="DasShop" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Brick Kingdom</title>
+    <%--CSS--%>
+    <link href="Styles/SecondMainStyle.css" rel="stylesheet" />
+
+    <link href="Styles/font-awesome.min.css" rel="stylesheet" />
+    <!-- icons -->
+    <link href="Styles/owl.theme.css" rel="stylesheet" />
+    <!-- carusell -->
+    <link href="Styles/owl.transitions.css" rel="stylesheet" />
+    <!-- carusell -->
+    <link href="Styles/owl.carousel.css" rel="stylesheet" />
+    <!-- carusell -->
+    <link href="Styles/common.css" rel="stylesheet" />
+    <!-- dropdown -->
+    <link href="Styles/style4.css" rel="stylesheet" />
+    <!-- dropdown -->
+    <link href="Styles/animate.css" rel="stylesheet" />
+    <!-- animations -->
+
+    <%--FONTS--%>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,500italic,700,900' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Six+Caps' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Exo:400,900' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,700italic' rel='stylesheet' type='text/css'/>
+
+    <%--JS--%>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- icons -->
+    <script src="Javascript/owl.carousel.min.js"></script>
+    <!-- carusell -->
+    <script src="Javascript/modernizr.custom.63321.js"></script>
+    <!-- dropdown -->
+    <script src="Javascript/jquery.dropdown.js"></script>
+    <!-- dropdown -->
+
+    <script>
+        $(document).on('ready', function () {
+            window.foobar = $('#<%= drp_Category.ClientID %>').dropdown({
+                speed: 300,
+                easing: 'ease',
+                gutter: 0,
+                stack: true,
+                onOptionSelect: function (e) {
+                    setTimeout(function () {
+                        var id = $('.cd-dropdown input[type=hidden]').val();
+                        window.location = 'CategoryPage.aspx?id=' + id;
+                    }, 100);
+                }
+            }
+            );
+        });
+
+        $(document).on('ready', function () {
+            $('a:not([rel=external])').on('click', function (e) {
+                var url = $(this).attr('href');
+
+                if (!url || url.indexOf('javascript:') != -1) return;
+
+                e.preventDefault();
+
+                $('#overflow').animate({ 'opacity': 0 }, 250, function () {
+                    $('#page_loader').show();
+                    window.location = url;
+                });
+            });
+        });
+
+        $(window).on('load', function () {
+            $('#overflow').animate({ 'opacity': 1 }, 250);
+            $('#page_loader').hide();
+        });
+
+
+    </script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="page_loader">
+        <i class="fa fa-cog fa-spin fa-5x"></i>
+    </div>
+
+    <div id="overflow" style="opacity: 0">
+        <form id="form1" runat="server">
+            <header>
+
+                <div class="shop-info">
+                    <span><i class="fa fa-envelope"></i> brickkingdom@outlook.com</span>
+                    <span><i class="fa fa-phone"></i> 0700 000 000 </span>
+                </div>
+
+                <div class="sticky-header">
+                    <div class="wrapper-logo">
+                        <a href="SecondIndex.aspx">
+                            <img src="Media/LEGO_logo%20(1).jpg" />
+                            <span>Brick Kingdom</span>
+                        </a>
+                    </div>
+
+                    <nav>
+                        <asp:DropDownList ID="drp_Category" class="cd-select" runat="server" name="Kategori" AutoPostBack="True" OnSelectedIndexChanged="drp_Category_OnSelectedIndexChanged">
+                        </asp:DropDownList>
+                        <ul>
+                            <a href="About.aspx">
+                                <li>Om oss</li>
+                            </a>
+                            <a href="ContactPage.aspx">
+                                <li>Kontakt</li>
+                            </a>
+                            <a href="Search.aspx">
+                                <li>Sök <i class="fa fa-search"></i></li>
+                            </a>
+                        </ul>
+                    </nav>
+
+                    <asp:HyperLink ID="hlShoppingbag" NavigateUrl="Checkout.aspx" runat="server">
+                        <div class="wrapper-shoppingbag">
+                            <div class="shoppingbag">
+                                <i class="fa fa-shopping-cart"></i>
+                                <asp:Label ID="lblTotalProducts" runat="server" Text=""></asp:Label>
+                                <asp:Label ID="lblTotalCost" runat="server" Text=""></asp:Label>
+                            </div>
+                        </div>
+                    </asp:HyperLink>
+                </div>
+
+            </header>
+            <!-- Content --->
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <!-- /Content --->
+        </form>
+    </div>
+</body>
+</html>
+

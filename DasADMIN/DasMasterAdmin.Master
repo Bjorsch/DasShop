@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="DasMasterAdmin.master.cs" Inherits="DasADMIN.DasMasterAdmin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>ADMIN</title>
+        <link href="Styles/AdminMasterStyle.css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster" />
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <header>
+        <nav>
+            <ul class="fancyNav">
+                <li id="home"><a href="default.aspx" class="homeIcon">Home</a></li>
+                <li id="news"><a href="OrderStart.aspx">Ordrar</a></li>
+                <li id="about"><a href="CategoryAdmin.aspx">Kategorier</a></li>
+                <li id="services"><a href="ProductAdmin.aspx">Produkter</a></li>      
+                <li id="webshop"><a href="http://localhost:11687/SecondIndex.aspx">Butiken</a></li>      
+                <li id="button"><asp:Button CssClass="knapp" ID="BtnSignout" runat="server" Text="Logga ut" OnClick="BtnSignout_Click" /></li>            
+            </ul>
+        </nav>          
+    </header>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

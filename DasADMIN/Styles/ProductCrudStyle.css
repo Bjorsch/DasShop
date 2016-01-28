@@ -1,0 +1,91 @@
+﻿body {
+}
+
+*:focus{
+    outline:none;
+}
+.ddl-relcat {
+    width: 268px;
+    padding: 5px;
+    font-size: 16px;
+    line-height: 1;
+    /*border: 0;*/
+    border-radius: 0;
+    height: 34px;
+    -webkit-appearance: none;
+    background: url('../Media/Images/arrow_down.png') no-repeat right #ddd;
+    background-size: 32px;
+    margin-top: 8px;
+
+}
+
+.crud-wrapper {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    /*border: 2px solid green;*/
+    min-height: 800px;
+}
+
+.tbx-wrapper {
+    width: 35%;
+    /*border: 2px solid red;*/
+    float: left;
+    min-height: 300px;
+}
+
+.name, .number, .price, .image, .image-box, .image-OObox, .dropdown-list {
+    display: block;
+    margin-top: 20px;
+}
+
+.name-label, .number-label, .price-label, .image-label, .image-box-label, .image-OObox-label, .ddl-label {
+    display: block;
+    font-size: x-large;
+}
+
+.tbx-name, .tbx-number, .tbx-price, .tbx-image, .tbx-box-image, .tbx-OObox-image {
+    display: block;
+    margin-top: 8px;
+}
+
+.description {
+    width: 55%;
+    /*border: 2px solid blue;*/
+    /*display:inline;*/
+    float: right;
+}
+
+.desc-label {
+    display: block;
+    margin-top: 20px;
+    font-size: x-large;
+    margin-bottom: 8px;
+}
+
+.button-wrapper {
+    /*border: 2px solid orange;*/
+    width: 50%;
+    float: right;
+}
+
+.btn-update, .btn-delete {
+  font-size: large;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+  margin-top:12px;
+  float:right;
+}
+.btn-delete {
+    margin-right:20px;
+   
+}
+.desc-box {
+    max-height: 28px;
+}
